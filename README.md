@@ -12,6 +12,7 @@ Si besoin
 ```shell
 sudo ip link add name docker0 type bridge
 sudo ip addr add dev docker0 172.17.0.1/16
+sudo systemctl restart docker
 ```
 
 ## Positionnement des droits
