@@ -12,8 +12,8 @@ Si besoin
 ```shell
 sudo ip link add name docker0 type bridge
 sudo ip addr add dev docker0 172.17.0.1/16
-sudo usermod -aG docker $USER
 newgrp docker
+sudo usermod -aG docker $USER
 sudo systemctl restart docker
 ```
 
@@ -33,4 +33,11 @@ chmod +x *.sh
 
 ```shell
 ./run.sh
+```
+
+## Extraire ISO
+
+```shell
+sudo mkdir /mnt/iso
+sudo mount -o loop /<chemin vers l'ISO> /mnt/iso
 ```
