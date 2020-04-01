@@ -8,11 +8,13 @@ sudo apt install -y docker.io
 ```
 
 ## Construction de l'image
+
 ```shell
 ./build.sh
 ```
 
-## Lancement de l'image
+## Lancement de l'image
+
 ```shell
 ./run.sh
 ```
