@@ -14,6 +14,12 @@ sudo ip link add name docker0 type bridge
 sudo ip addr add dev docker0 172.17.0.1/16
 ```
 
+## Positionnement des droits
+
+```shell
+chmod +x *.sh
+```
+
 ## Construction de l'image
 
 ```shell
