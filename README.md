@@ -1,26 +1,15 @@
 # Ubuntu
 
-## Installation de docker
-
-```shell
-sudo apt update
-sudo apt install -y docker.io
-```
-
-Si besoin
-
-```shell
-sudo ip link add name docker0 type bridge
-sudo ip addr add dev docker0 172.17.0.1/16
-newgrp docker
-sudo usermod -aG docker $USER
-sudo systemctl restart docker
-```
-
 ## Positionnement des droits
 
 ```shell
 chmod +x *.sh
+```
+
+## Installation de docker
+
+```shell
+./install_docker.sh
 ```
 
 ## Construction de l'image
@@ -35,7 +24,7 @@ chmod +x *.sh
 ./run.sh
 ```
 
-## Extraire ISO
+## Extraire ISO
 
 ```shell
 sudo mkdir /mnt/iso
